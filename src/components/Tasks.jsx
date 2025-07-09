@@ -18,7 +18,7 @@ function Tasks({ tasks, onTaskClick, onTrashClick }) {
         <li key={task.id} className="flex gap-2">
           <button
             onClick={() => onTaskClick(task.id)}
-            className={`bg-slate-400 text-left w-full flex items-center gap-2 ecursor-pointer hover:bg-slate-300 text-black p-2 rounded-md ${
+            className={`bg-slate-400 text-left w-full flex items-center gap-2 cursor-pointer hover:bg-slate-300 text-black p-2 rounded-md ${
               task.isCompleted && "line-through"
             }`}
           >
